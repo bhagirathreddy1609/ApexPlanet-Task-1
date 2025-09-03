@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title>
+
+  <!-- CSS Styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 20px;
+      padding: 0;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    img {
+      display: block;
+      margin: 10px auto;
+      border-radius: 12px;
+      width: 200px;
+    }
+
+    a {
+      color: darkblue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      background-color: darkblue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: navy;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HTML Structure -->
+  <h1>Welcome to My Webpage</h1>
+  <p>This is my first webpage using HTML, CSS, and JavaScript.</p>
+
+  <h2>About Me</h2>
+  <p>I am learning web development and building simple projects!</p>
+
+  <h2>My Favorite Things</h2>
+  <ul>
+    <li>Coding</li>
+    <li>Music</li>
+    <li>Travel</li>
+  </ul>
+
+
+  <h2>Useful Link</h2>
+  <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">
+    Learn Web Development at MDN
+  </a>
+
+  <br>
+  <button id="myButton">Click Me</button>
+
+  <!-- JavaScript Interaction -->
+  <script>
+    // Select button
+    const button = document.getElementById("myButton");
+
+    // Add click event
+    button.addEventListener("click", function() {
+      alert("Hello! You clicked the button 🚀");
+    });
+  </script>
+
+</body>
+</html>
