@@ -2,96 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First Webpage</title>
-
-  <!-- CSS Styling -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      margin: 20px;
+      font-family: Georgia, serif;
+      margin: 0;
       padding: 0;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
     }
 
-    h1 {
-      color: darkblue;
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: #fafafa;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #444;
+    }
+    header p {
+      margin-top: 8px;
+      color: #777;
+      font-style: italic;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 0 20px;
       text-align: center;
     }
-
-    p {
-      font-size: 18px;
-      color: #333;
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    section p {
+      color: #555;
     }
 
     img {
-      display: block;
-      margin: 10px auto;
-      border-radius: 12px;
-      width: 200px;
+      width: 280px;
+      border-radius: 6px;
+      margin: 20px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     a {
-      color: darkblue;
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      border: 1px solid #555;
+      border-radius: 4px;
+      color: #333;
       text-decoration: none;
+      transition: 0.3s;
     }
-
     a:hover {
-      text-decoration: underline;
+      background: #333;
+      color: white;
     }
 
     button {
-      display: block;
-      margin: 20px auto;
-      background-color: darkblue;
-      color: white;
+      margin-top: 20px;
       padding: 10px 20px;
+      font-size: 15px;
       border: none;
-      border-radius: 8px;
+      border-radius: 4px;
+      background-color: #555;
+      color: white;
       cursor: pointer;
-      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #333;
     }
 
-    button:hover {
-      background-color: navy;
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <!-- HTML Structure -->
-  <h1>Welcome to My Webpage</h1>
-  <p>This is my first webpage using HTML, CSS, and JavaScript.</p>
+  <header>
+    <h1>My First Webpage</h1>
+    <p>Simple • Clean • Elegant</p>
+  </header>
 
-  <h2>About Me</h2>
-  <p>I am learning web development and building simple projects!</p>
+  <section>
+    <h2>About</h2>
+    <p>Hello, I’m learning web development.  
+       This page is my small step toward building beautiful and simple websites.</p>
+  </section>
 
-  <h2>My Favorite Things</h2>
-  <ul>
-    <li>Coding</li>
-    <li>Music</li>
-    <li>Travel</li>
-  </ul>
+  <section>
+    <h2>Gallery</h2>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
+         alt="A cute cat lying down">
+    <p>A peaceful cat 🐾</p>
+  </section>
 
+  <section>
+    <h2>Explore</h2>
+    <p>Here’s a resource I use to learn coding:</p>
+    <a href="https://www.freecodecamp.org" target="_blank">Visit FreeCodeCamp</a>
+  </section>
 
-  <h2>Useful Link</h2>
-  <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">
-    Learn Web Development at MDN
-  </a>
+  <section>
+    <h2>Try It</h2>
+    <p>Click the button for a greeting:</p>
+    <button onclick="showMessage()">Click Me</button>
+  </section>
 
-  <br>
-  <button id="myButton">Click Me</button>
+  <footer>
+    <p>&copy; 2025 My First Webpage | Made with curiosity ✨</p>
+  </footer>
 
-  <!-- JavaScript Interaction -->
   <script>
-    // Select button
-    const button = document.getElementById("myButton");
-
-    // Add click event
-    button.addEventListener("click", function() {
-      alert("Hello! You clicked the button 🚀");
-    });
+    function showMessage() {
+      alert("Hello! Wishing you a wonderful day 🌸");
+    }
   </script>
 
 </body>
 </html>
+
+
+    
+      
+  
+  
